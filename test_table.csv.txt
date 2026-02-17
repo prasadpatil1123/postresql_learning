@@ -1,0 +1,5 @@
+first_name,last_name,department,salary,joining_date,age
+Rahul,Sharma,IT,55000.50,2023-01-15,28
+Priya,Singh,HR,48000.00,2022-06-20,26
+Amit,Patel,Finance,62000.75,2021-09-10,30
+Sneha,Verma,IT,53000.00,2024-02-05,25
