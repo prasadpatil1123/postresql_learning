@@ -10,14 +10,6 @@ select first_name, age
 from employee3
 where age <> 30;
 
-select first_name, salary 
+select first_name, sal 
 from employee3
 where salary > 50000;
-
-select first_name, salary 
-from employee3
-where salary >= 50000;
-
-select first_name, salary 
-from employee3
-where salary < 50000;
