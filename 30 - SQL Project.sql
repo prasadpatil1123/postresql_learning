@@ -97,11 +97,27 @@ select sum(total_amount) as revenue from orders;
 
 -- 1) Retrieve the total number of books sold for each genre:
 
--- 2) Find the average price of books in the "Fantasy" genre:
+select * from orders;
 
+select b.genre, sum(o.quantity) as total_sold
+from books b join orders o 
+on b.book_id = o.book_id
+group by b.genre;
+
+-- 2) Find the average price of books in the "Fantasy" genre:
+select avg(price) 
+from books
+where genre = 'Fantasy';
 
 -- 3) List customers who have placed at least 2 orders:
+select * from Books;
+select * from Customers;
+select * from Orders;
 
+select o.customer_id, c.name, count(order_id) as order_count
+from orders o join customers c on o.customer_id = c.customer_id
+group by o.customer_id, c.name
+having count(order_id) > 2;
 
 -- 4) Find the most frequently ordered book:
 
